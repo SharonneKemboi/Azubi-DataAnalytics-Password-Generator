@@ -70,7 +70,6 @@ print(pass_symbol_list)
 
 
 
-
 # Get the Random Digits for the password
 
 # Set Accumulator for the Number of Digits List
@@ -83,10 +82,14 @@ for number in range(no_of_digits):
 
 print(pass_digits_list)   
 
-# Add the lists to get the final_password_list and shuffle the final_password_list
 
+# Add the lists to get the final_password_list and shuffle the fin_pass_list
 
-# To shuffle, items in a list https://www.w3schools.com/python/ref_random_shuffle.asp 
+fin_pass_list = pass_char_list + pass_symbol_list + pass_digits_list
+
+#shuffle the fin_pass_list
+random.shuffle(fin_pass_list)
+print(fin_pass_list)
 
 # Now that we have our password in a list lets change that to a string then print it
 
