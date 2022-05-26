@@ -23,11 +23,7 @@ all_digits = list(string.digits)
 all_symbols = list(string.punctuation)
 # print(f"Check out these symbols: {all_symbols}")
 
-#########################################################################################################
 
-
-
-####################################### TYPE YOU CODE IN HERE! ##########################################
 # Ask user for how many letters they would like in their password and cast to integer and store as no_of_letters
 no_of_letters = int(input("Hey How Many Letters Would You Like In Your Password?  "))
 # print(f"What Data Type Is This?  {type(no_of_letters)} letters")
@@ -46,8 +42,12 @@ pass_char_list = []
 
 # Get the random letter for the password
 # Randomly Select the characters
-# for number in range(no_of_letters):
+for number in range(no_of_letters):
 #       select a random characer from list of alphabets and append to the password characters list 
+    # print(number)  
+    random_letter = random.choice(all_alphabets)
+    pass_char_list.append(random_letter)
+    # print(random_letter)
 
 
 
