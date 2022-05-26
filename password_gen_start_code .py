@@ -46,8 +46,11 @@ for number in range(no_of_letters):
 #       select a random characer from list of alphabets and append to the password characters list 
     # print(number)  
     random_letter = random.choice(all_alphabets)
-    pass_char_list.append(random_letter)
     # print(random_letter)
+    pass_char_list.append(random_letter)
+
+print(pass_char_list)    
+  
 
 
 
@@ -55,10 +58,15 @@ for number in range(no_of_letters):
 
 # Set Accumulator for the Number of Symbols List
 
-
+pass_symbol_list = []
 # Randomly Select the characters
-# for number in range(no_of_symbols):
+for number in range(no_of_symbols):
 #       select a random symbol from list of symbols and append to the password symbols list 
+    random_symbol = random.choice(all_symbols)
+    pass_symbol_list.append(random_symbol)
+
+print(pass_symbol_list)   
+
 
 
 
@@ -66,11 +74,14 @@ for number in range(no_of_letters):
 # Get the Random Digits for the password
 
 # Set Accumulator for the Number of Digits List
-
+pass_digits_list = []
 # Randomly Select the characters
-# for number in range(no_of_digits):
+for number in range(no_of_digits):
 #       select a random digit from list of digits and append to the password digits list 
+    random_digit = random.choice(all_digits)
+    pass_digits_list.append(random_digit)
 
+print(pass_digits_list)   
 
 # Add the lists to get the final_password_list and shuffle the final_password_list
 
