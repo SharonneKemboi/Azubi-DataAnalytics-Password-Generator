@@ -41,6 +41,7 @@ no_of_symbols = int(input("Hey How Many Symbols Would You Like To Have In Your P
 no_of_digits = int(input("Hey How Many digits Would You Like To Have In Your Password?  "))
 
 # Set Accumulator for Password Characters List
+pass_char_list = []
 
 
 # Get the random letter for the password
