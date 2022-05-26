@@ -3,7 +3,7 @@
     input:  password length
             Number of Digits
             Number of Symbols
-    
+
     output: password (as string)
 """
 ####################################################################################################
@@ -43,14 +43,14 @@ pass_char_list = []
 # Get the random letter for the password
 # Randomly Select the characters
 for number in range(no_of_letters):
-#       select a random characer from list of alphabets and append to the password characters list 
-    # print(number)  
+#       select a random characer from list of alphabets and append to the password characters list
+    # print(number)
     random_letter = random.choice(all_alphabets)
     # print(random_letter)
     pass_char_list.append(random_letter)
 
-print(pass_char_list)    
-  
+# print(pass_char_list)
+
 
 
 
@@ -61,11 +61,11 @@ print(pass_char_list)
 pass_symbol_list = []
 # Randomly Select the characters
 for number in range(no_of_symbols):
-#       select a random symbol from list of symbols and append to the password symbols list 
+#       select a random symbol from list of symbols and append to the password symbols list
     random_symbol = random.choice(all_symbols)
     pass_symbol_list.append(random_symbol)
 
-print(pass_symbol_list)   
+# print(pass_symbol_list)
 
 
 
@@ -76,11 +76,11 @@ print(pass_symbol_list)
 pass_digits_list = []
 # Randomly Select the characters
 for number in range(no_of_digits):
-#       select a random digit from list of digits and append to the password digits list 
+#       select a random digit from list of digits and append to the password digits list
     random_digit = random.choice(all_digits)
     pass_digits_list.append(random_digit)
 
-print(pass_digits_list)   
+# print(pass_digits_list)
 
 
 # Add the lists to get the final_password_list and shuffle the fin_pass_list
@@ -89,10 +89,10 @@ fin_pass_list = pass_char_list + pass_symbol_list + pass_digits_list
 
 #shuffle the fin_pass_list
 random.shuffle(fin_pass_list)
-print(fin_pass_list)
+# print(fin_pass_list)
 
 # Now that we have our password in a list lets change that to a string then print it
-
+print((" ".join(fin_pass_list)))
 # accumulator for string_password
 
 
